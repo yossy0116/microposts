@@ -1,4 +1,8 @@
 <h1>
-    <%= gravatar_for @user %>
-    <%= @user.name %>
+  <%= gravatar_for @user %>
+  <%= @user.name %>
 </h1>
+<ul>
+  <li>E-mail： <%= @user.email %></li>
+  <li>Location： <%= @user.location %></li>
+</ul>
