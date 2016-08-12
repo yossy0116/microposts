@@ -2,10 +2,12 @@ class UsersController < ApplicationController
   
   def show #追加
     @user = User.find(params[:id])
+    #render "show" いちいち記述しないがRailsで処理してくれているもの
   end
   
   def new
     @user = User.new
+    # render "new" いちいち記述しないがRailsで処理してくれているもの
   end
   
   def create
